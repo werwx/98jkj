@@ -1,0 +1,201 @@
+private async Task ProcessWithRetryAsync(DownloadFileItem item)
+{
+    const int maxRetries = 3;
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {
+        try
+        {
+            await DownloadFileAsync(...);
+            return;
+        }
+        catch (Exception ex)
+        {
+            if (attempt == maxRetries)
+            {
+                await _dbService.MarkAsFailedAsync(item.DbId);private async Task ProcessWithRetryAsync(DownloadFileItem item)
+{
+    const int maxRetries = 3;
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {
+        try
+        {
+            await DownloadFileAsync(...);
+            return;
+        }private async Task ProcessWithRetryAsync(DownloadFileItem item)
+{
+    const int maxRetries = 3;
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {
+        try
+        {
+            await DownloadFileAsync(...);
+            return;
+        }
+        catch (Exception ex)private async Task ProcessWithRetryAsync(DownloadFileItem item)
+{
+    const int maxRetries = 3;
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {private async Task ProcessWithRetryAsync(DownloadFileItem item)
+{
+    const int maxRetries = 3;
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {
+        try
+        {private async Task ProcessWithRetryAsync(DownloadFileItem item)
+{
+    const int maxRetries = 3;
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {
+        try
+        {
+            await DownloadFileAsync(...);private async Task ProcessWithRetryAsync(DownloadFileItem item)
+{
+    const int maxRetries = 3;
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {
+        tryprivate async Task ProcessWithRetryAsync(DownloadFileItem item)
+{
+    const int maxRetries = 3;
+    for (int attempt = 1; attempt <= maxRetries; attempt++)
+    {
+        try
+        {
+            await DownloadFileAsync(...);
+            return;
+        }
+        catch (Exception ex)
+        {
+            if (attempt == maxRetries)
+            {
+                await _dbService.MarkAsFailedAsync(item.DbId);
+                throw;
+            }
+            
+            await Task.Delay(CalculateBackoff(attempt));
+            await _dbService.RecordRetryAsync(item.DbId, attempt);
+        }
+    }
+}
+
+private int CalculateBackoff(int attempt) => 
+    Random.Shared.Next(100, 500) * (int)Math.Pow(2, attempt);
+        {
+            await DownloadFileAsync(...);
+            return;
+        }
+        catch (Exception ex)
+        {
+            if (attempt == maxRetries)
+            {
+                await _dbService.MarkAsFailedAsync(item.DbId);
+                throw;
+            }
+            
+            await Task.Delay(CalculateBackoff(attempt));
+            await _dbService.RecordRetryAsync(item.DbId, attempt);
+        }
+    }
+}
+
+private int CalculateBackoff(int attempt) => 
+    Random.Shared.Next(100, 500) * (int)Math.Pow(2, attempt);
+            return;
+        }
+        catch (Exception ex)
+        {
+            if (attempt == maxRetries)
+            {
+                await _dbService.MarkAsFailedAsync(item.DbId);
+                throw;
+            }
+            
+            await Task.Delay(CalculateBackoff(attempt));
+            await _dbService.RecordRetryAsync(item.DbId, attempt);
+        }
+    }
+}
+
+private int CalculateBackoff(int attempt) => 
+    Random.Shared.Next(100, 500) * (int)Math.Pow(2, attempt);
+            await DownloadFileAsync(...);
+            return;
+        }
+        catch (Exception ex)
+        {
+            if (attempt == maxRetries)
+            {
+                await _dbService.MarkAsFailedAsync(item.DbId);
+                throw;
+            }
+            
+            await Task.Delay(CalculateBackoff(attempt));
+            await _dbService.RecordRetryAsync(item.DbId, attempt);
+        }
+    }
+}
+
+private int CalculateBackoff(int attempt) => 
+    Random.Shared.Next(100, 500) * (int)Math.Pow(2, attempt);
+        try
+        {
+            await DownloadFileAsync(...);
+            return;
+        }
+        catch (Exception ex)
+        {
+            if (attempt == maxRetries)
+            {
+                await _dbService.MarkAsFailedAsync(item.DbId);
+                throw;
+            }
+            
+            await Task.Delay(CalculateBackoff(attempt));
+            await _dbService.RecordRetryAsync(item.DbId, attempt);
+        }
+    }
+}
+
+private int CalculateBackoff(int attempt) => 
+    Random.Shared.Next(100, 500) * (int)Math.Pow(2, attempt);
+        {
+            if (attempt == maxRetries)
+            {
+                await _dbService.MarkAsFailedAsync(item.DbId);
+                throw;
+            }
+            
+            await Task.Delay(CalculateBackoff(attempt));
+            await _dbService.RecordRetryAsync(item.DbId, attempt);
+        }
+    }
+}
+
+private int CalculateBackoff(int attempt) => 
+    Random.Shared.Next(100, 500) * (int)Math.Pow(2, attempt);
+        catch (Exception ex)
+        {
+            if (attempt == maxRetries)
+            {
+                await _dbService.MarkAsFailedAsync(item.DbId);
+                throw;
+            }
+            
+            await Task.Delay(CalculateBackoff(attempt));
+            await _dbService.RecordRetryAsync(item.DbId, attempt);
+        }
+    }
+}
+
+private int CalculateBackoff(int attempt) => 
+    Random.Shared.Next(100, 500) * (int)Math.Pow(2, attempt);
+                throw;
+            }
+            
+            await Task.Delay(CalculateBackoff(attempt));
+            await _dbService.RecordRetryAsync(item.DbId, attempt);
+        }
+    }
+}
+
+private int CalculateBackoff(int attempt) => 
+    Random.Shared.Next(100, 500) * (int)Math.Pow(2, attempt);
